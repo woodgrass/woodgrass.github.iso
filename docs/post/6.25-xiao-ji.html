@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -72,8 +72,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><p>wow，这个博客搭建项目实在是酷啊，也算是帮我们的日记数据找到一个合适的存放空间，因为据这位up所说，把数据保管到GitHub所分配的域名中还算是相当可靠的，也算是我的一个个人博客网站吧，今天上午考完试之后呢就没什么事了，打了打赛博朋克，新义体的购买让我感觉自己碉堡了。下午有些浪费青春了，了解关注了很多家教平台，但都没有短期的招聘信息，也尝试去做咖啡馆兼职，可惜人家不招，害！我挺喜欢这个工作的，喜欢有机会我能开一家咖啡馆，调酒，和陌生人聊天聊故事。晚上去看了看眼镜店，我的镜片太小没有合适的框，看来现在只能等暑假去平顶山了换了镜片再说了。路上相中了一家烧烤店，但我发现自己现在在街上很容易emo，老是看上漂亮女孩就balabala胡思乱想耽误事，在屈臣氏买洗头膏也要选择纠结，希望我可以更果断一点以后。晚上邂逅了破产姐妹这部美剧，哇，神中神，可以和无耻之徒媲美。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://woodgrass.github.io/woodgrass.github.iso"> Blog Title </a>
 <p>
@@ -128,6 +130,8 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
 
 function openComments(){
     cm=document.getElementById("comments");
